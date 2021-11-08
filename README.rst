@@ -27,10 +27,11 @@ Then generate a folder with config files::
     cookiecutter gh:TeamHG-Memex/aquarium
 
 With all default options it'll create an ``aquarium`` folder in the current
-path. Go to this folder and start the Splash cluster::
+path. Go to this folder and start the Splash cluster with automatic restarting
+every few hours::
 
     cd ./aquarium
-    docker-compose up
+    ./start    
 
 Then use http://<host>:8050 as a regular Splash_ instance. On Linux
 http://0.0.0.0:8050 should work; on OS X and Windows IP address depends on

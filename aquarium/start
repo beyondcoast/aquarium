@@ -1,2 +1,4 @@
 #!/bin/bash
-timeout --kill-after=5s 4h docker-compose up
+while true; do
+    timeout --kill-after=5s 4h docker-compose up
+done
